@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            border: 10px solid black;
+            flex-direction: row;
+            display:flex;
+        }
+        @media only screen and (max-width:1023px){
+            .container{
+            background-color: black;
+            border: 10px solid yellow;
+            flex-direction: row;
+            display:flex;
+            }
+        }
+        @media only screen and (max-width:767px){
+            .container{
+            background-color: black;
+            border: 10px solid red;
+            flex-direction: row;
+            display:flex;
+            }
+        }
+        .abc{
+            background-color: blue;
+            padding: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="abc" style="order:1;">11</div>
+        <div class="abc">22</div>
+        <div class="abc" style="order:2">33</div>
+        <div class="abc" style="flex-grow: 0.5;">44</div>
+        <div class="abc">55</div>
+    </div>
+</body>
+</html>

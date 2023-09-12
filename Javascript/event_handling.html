@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Validation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='Js/eventHandle.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .erro{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container w-50">
+        <h1 class="p-3">Contact Us</h1>
+        <form action="server.aspx" method="get">
+            <div class="row">
+                <div class="col-md-3"><label>Name</label></div>
+                <div class="col-md-9">
+                <input type="text" id="name" class="form-control" aria-placeholder="Enter name" />
+                <label id="name_err" class="error"></label>
+            </div></div>
+            <div class="row mt-2">
+                <div class="col-md-3"><label>Email ID</label></div>
+                <div class="col-md-9">
+                <input type="text" id="email" class="form-control" aria-placeholder=" Enter EmailId" />
+                <label id="email_err" class="error"></label>
+            </div> </div>
+
+            
+            <div class="row mt-2">
+                <div class="col-md-3"><label>Mobile</label></div>
+                <div class="col-md-9">
+                <input type="text" id="mobile" class="form-control" aria-placeholder=" Enter mobile number" />
+            </div> </div>
+
+            <div class="row mt-2">
+                <div class="col-md-3"><label>Query</label></div>
+                <div class="col-md-9">
+                <select id="query" onchange="handleQuery(event)" class="form-control">
+                    <option value="select">Select</option>
+                    <option value="hr">HR</option>
+                    <option value="financial">SFinancial</option>
+                    <option value="business">Business</option>
+                </select>
+            </div></div>
+
+            <div class="row mt-2">
+                <div class="col-md-3"><label>Description</label></div>
+                <div class="col-md-9">
+                <input type="textarea" id="desc" class="form-control" aria-placeholder="Enter Description" />
+            </div></div>
+            
+            <div class="mt-2">
+
+                <button onclick="return validateForm()"   class="btn btn-primary btn-sm">Submit</button>
+            </div>
+        </form>
+    </div>
+    <button onclick="closeWindow()">Close</button>
+
+  </body>
+    <script>
+        // function closeWindow(){
+        //     setTimeout(function(){
+        //         window.close();
+        //     },3000);
+        // }
+        // function handleQuery(element){
+        //     var query = element.target.value;
+
+        //     if(query=='hr'){
+        //         alert('HR is not available');
+
+        //     }
+        // }
+
+        function validateForm(){
+            var name=document.getElementById('name').value;
+            var email=document.getElementById('emailId').value;
+            var mobile=document.getElementById('mobile').value;
+            var query=document.getElementById('quert').value;
+            var desc=document.getElementById('desc').value;
+            document.getElementById('name_err').innerHTML = " ";
+            document.getElementById('email_err').innerHTML=" ";
+            if(name==""){
+                document.getElementById('name_err').innerHTML="Please enter name";
+                return false;
+
+            }
+            if(email==" "){
+                document.getElementById('email_err').innerHTML="Please enter EmailId";
+                return false;
+
+            }
+        }
+        debugger;
+
+
+    </script>
+
+
+</html>

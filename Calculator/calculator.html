@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+    h4{
+        text-align: center;
+    }
+    input{
+        width:70%;
+        justify-content: center;
+    }
+    button{
+        text-transform: none;
+    width: 10%;
+    height: 30%;
+    margin: 5px;
+    }
+    .operators button{
+        text-transform: none;
+    width: 10%;
+    height: 30%;
+    margin: 5px;
+    }
+    .class-sm-12{
+        margin:10px;
+    }
+    .row{
+        position: relative;
+    top: 76px;
+    left: 18px;
+    }
+    .numbers{
+        position: relative;
+        top:25%;
+        left:25%;
+    }
+    .frm{
+        border-color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container w-50">
+        <div class="row">
+            <div class="header">
+                <h4> Simple Calculator </h4>
+            </div>
+            <div class="textbox">
+                <input type="text" class="form-control frm" id="display">
+            </div>
+            <br/>
+            <br/>
+            <div class = "numbers">
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <br/>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <br/>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <br/>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="clearD()">C</button>
+                <button onclick="calc()">=</button>
+                <br/>
+            </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="JS/script.js"></script>
+</html>
