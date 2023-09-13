@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="w/o_sorted"></p>
+    <p id="sorted"></p>
+    <p id="compare"></p>
+    <script>
+        var arr = [33, 8, 2, 2, 40, 4, -1, 56, 9, 22];
+        document.getElementById('w/o_sorted').innerText = arr;
+        document.getElementById('sorted').innerText = arr.sort();
+        document.getElementById('compare').innerText = arr.sort(function (a, b) { return a - b });
+    </script>
+</body>
+
+</html>

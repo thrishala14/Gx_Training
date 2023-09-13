@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        input {
+            margin-left: 25% !important;
+            border: 1px 1px black !important;
+        }
+
+        h4 {
+            margin-top: 20px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Odd or Even</h2>
+    <input type="number" id="number" class="form-control form-control-lg w-50" onkeyup="odd_or_even()">
+    <!-- <button type="submit" id="submit" >Check</button> -->
+    <h4 id="answer"></h4>
+    <script>
+        submit.preventDefault();
+        function odd_or_even() {
+            var num = document.getElementById("number").value;
+            num % 2 == 1 ? document.getElementById("answer").innerText = "The Number is Odd" : document.getElementById("answer").innerText = "The Number is Even";
+        }
+    </script>
+</body>
+
+</html>

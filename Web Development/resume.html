@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2> Resume </h2>
+    <div class="container d-flex">
+       
+        <div class="col-md-3">
+            <h4 id = "name"></h4>
+            <h4 id = "email"></h4>
+            <h6 id="location"></h6>
+            
+        </div>
+        <div class="col-md-6 float-right">
+            <p>
+                <h6>About</h6>
+                <p id="about"></p>
+            </p>
+            <p>
+                <h6>skills</h6>
+                <ul id="skills">
+                    
+                </ul>
+
+            </p>
+            <p >
+                <h6>Projects</h6>
+                <ul id="projects">
+                    
+                    
+                </ul>
+            </p>
+        </div>
+        
+    </div>
+    <script>
+        var resume =
+            {
+            "name": "Thrishala",
+            "email": "johndoe@example.com",
+            "location": "Mangalore",
+            "about": "I'm a web developer passionate about creating web applications.",
+            "skills": ["HTML/CSS", "JavaScript", "React", "Node.js"],
+            "projects": [
+                {
+                    "title": "Portfolio Website",
+                    "description": "Designed and built a personal portfolio website.",
+                    "year": 2021
+                },
+                {
+                    "title": "E-commerce App",
+                    "description": "Developed an e-commerce web application using React.",
+                    "year": 2020
+                }
+            ]
+            }
+
+        document.getElementById('name').innerText=resume.name;
+        document.getElementById('email').innerText=resume.email;
+        document.getElementById('location').innerText=resume.location;
+        document.getElementById('about').innerText=resume.about;
+        for(let i=0;i<resume.skills.length;i++){
+        document.getElementById('skills').innerHTML+="<li>"+resume.skills[i]+"</li>"}
+        for(let j=0;j<resume.projects.length;j++){
+            document.getElementById('projects').innerHTML+="<li style='list-style-type:none'><b>"+resume.projects[j].title+"</b></li><li>"+resume.projects[j].description+"</li><li>"+resume.projects[j].year+"</li></br>";
+        }
+    </script>
+</body>
+</html>
