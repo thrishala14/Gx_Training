@@ -1,0 +1,65 @@
+-----Assignment 3----09/11/2023----
+---1.
+alter table Account
+add Balance int;
+
+select * from Account;
+
+update Account set Balance=50000 where Acc_No=1001;
+update Account set Balance=2000 where Acc_No=1002;
+update Account set Balance=100000 where Acc_No=1003;
+update Account set Balance=7900 where Acc_No=1004;
+update Account set Balance=60 where Acc_No=1005;
+
+---2.
+alter table Customer
+add Pincode varchar(10);
+
+select * from Customer;
+
+update Customer set Pincode=575003 where Cust_ID=1;
+update Customer set Pincode=575004 where Cust_ID=2;
+update Customer set Pincode=575005 where Cust_ID=3;
+update Customer set Pincode=575006 where Cust_ID=4;
+update Customer set Pincode=575007 where Cust_ID=5;
+update Customer set Pincode=575008 where Cust_ID=6;
+
+alter table Customer
+alter column pincode int;
+
+----3.
+BEGIN
+	SET IDENTITY_INSERT Customer ON;
+	insert into Customer (Cust_Id,cust_name,cust_address, cust_aadhaar, cust_mobile, cust_email, cust_age, Cust_ssn, age_2, pincode) 
+		values (50,'AAA', 'XXX', 111, 999, 'aaa@gmail.com', 30, 900, 20, 575001);
+	insert into Customer (Cust_Id,cust_name,cust_address, cust_aadhaar, cust_mobile, cust_email, cust_age, Cust_ssn, age_2, pincode) 
+		values (51,'BBB', 'YYY', 222, 888, 'bbb@gmail.com', 45, 800, 20, 575002);
+	insert into Customer (Cust_Id,cust_name,cust_address, cust_aadhaar, cust_mobile, cust_email, cust_age, Cust_ssn, age_2, pincode) 
+		values (52,'CCC', 'ZZZ', 333, 777, 'ccc@gmail.com', 60, 700, 20, 575100);
+	SET IDENTITY_INSERT Customer OFF;
+END
+
+select * from Customer;
+
+insert into Customer (Cust_Id,cust_name,cust_address, cust_aadhaar, cust_mobile, cust_email, cust_age, Cust_ssn, age_2, pincode) 
+		values (58,'AAA', 'XXX', 111, 999, 'aaa@gmail.com', 30, 900, 20, 575001);
+		---Msg 544, Level 16, State 1, Line 160
+		---Cannot insert explicit value for identity column in table 'Customer' when IDENTITY_INSERT is set to OFF.
+
+
+BEGIN
+	SET IDENTITY_INSERT Account ON;
+	insert into Account(Acc_No, Acc_Type, Acc_Balance, Acc_OpenDate, Cust_id, Balance) 
+		values (5000,'savings', 2000, '2023-09-08', 50, 5000);
+	insert into Account(Acc_No, Acc_Type, Acc_Balance, Acc_OpenDate, Cust_id, Balance) 
+		values (5001,'current', 10000, '2023-08-08', 50, 5000);
+	insert into Account(Acc_No, Acc_Type, Acc_Balance, Acc_OpenDate, Cust_id, Balance) 
+		values (5002,'current', 5000, '2023-07-08', 50, 5000);
+	SET IDENTITY_INSERT Account OFF;
+END
+
+select * from Account;
+
+insert into Account(Acc_No, Acc_Type, Acc_Balance, Acc_OpenDate, Cust_id, Balance) 
+		values (5007,'current', 5000, '2023-07-08', 50, 5000);
+----error
