@@ -1,0 +1,18 @@
+MultiTasking:
+* executing several task simultaneously
+* helps improve performance by reducing response time
+* Process base multitasking : executing several task 
+simultaneously where each task is separate independent 
+program. (OS LEVEL)
+* Thread based multitasking: executing several task 
+simultaneously where each task is separate independent 
+part of same program. (PROGRAM LEVEL)
+* Java provides built in support for multi-threading 
+with rich API
+ - thread
+ - runnable
+ - thread group
+* Thread: single flow of execution, for every thread a 
+separate independent job is there to perform.
+ - go for multitasking if no dependency
+ 
