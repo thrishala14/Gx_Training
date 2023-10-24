@@ -1,0 +1,40 @@
+Assignment #1:
+Prerequisite: Core Java, OOPs concept, Collection and Exception Handling
+Create an employee management application which has capabilities to add employee, view employee, update employee and delete employee. Use Java collection to store the employee information 
+Create an Employee Class with following attributes:
+			1.	ID – Long
+			2.	firstName – String
+			3.	LastName – String 
+			4.	DOB – Date
+			5.	Salary – Double
+			6.	City – String
+			7.	Gender - Char
+
+1.	Program should display the menu like 
+		a.	Enter 1: For insert record into collection.
+		b.	Enter 2: For display all records from collection
+		c.	Enter 3: For Delete single the records from collection
+		d.	Enter 4: For update the records from collection
+		e.	Enter 5: for display one record from collection Based on ID.
+
+
+2.	For insert record take input from user for all the columns except ID.
+		a.	Once all input completed insert into collection.
+		b.	And return to main menu.
+		
+		
+3.	For display take input and show all the records from collection
+		a.	Return to main 
+		
+4.	For update the records into collection
+		a.	Id input is mandatory 
+		b.	Take other input and update the record.
+		c.	Return to main menu
+		
+5.	For Delete single the records from collection
+		a.	Take ID as input and delete the record
+		b.	Return to main menu
+
+
+
+Note: To display Menu use switch.

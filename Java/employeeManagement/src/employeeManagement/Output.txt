@@ -1,0 +1,204 @@
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+1
+Enter First Name: 
+Thrishala
+Enter Last Name: 
+Natolana
+Enter DOB: 
+14/03/2001
+Enter Salary: 
+36990
+Enter City: 
+Mangalore
+Enter Gender: 
+f
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+1
+Enter First Name: 
+Akshatha
+Enter Last Name: 
+Shetty
+Enter DOB: 
+29/09/2000
+Enter Salary: 
+
+35000
+Enter City: 
+
+Udupi
+Enter Gender: 
+f
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+1
+Enter First Name: 
+Supriya
+Enter Last Name: 
+Shenoy
+Enter DOB: 
+29/01/1999
+Enter Salary: 
+30000
+Enter City: 
+Bengaluru
+Enter Gender: 
+f
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+2
+ID: 1001
+	 First Name: Thrishala
+	 Last Name: Natolana
+	 DOB: 14/3/2001
+	 City: Mangalore
+	 Salary: 36990.0
+	 Gender: Female
+ID: 1002
+	 First Name: Akshatha
+	 Last Name: Shetty
+	 DOB: 29/9/2000
+	 City: Udupi
+	 Salary: 35000.0
+	 Gender: Female
+ID: 1003
+	 First Name: Supriya
+	 Last Name: Shenoy
+	 DOB: 29/1/1999
+	 City: Bengaluru
+	 Salary: 30000.0
+	 Gender: Female
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+5
+Enter the ID to be display
+1002
+ID: 1002
+	 First Name: Akshatha
+	 Last Name: Shetty
+	 DOB: 29/9/2000
+	 City: Udupi
+	 Salary: 35000.0
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+5
+Enter the ID to be display
+1003
+ID: 1003
+	 First Name: Supriya
+	 Last Name: Shenoy
+	 DOB: 29/1/1999
+	 City: Bengaluru
+	 Salary: 30000.0
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+4
+Enter the ID to be updated
+1002
+Enter First Name: 
+Akshatha
+Enter Last Name: 
+Shetty
+Enter DOB: 
+19/01/1995
+Enter Salary: 
+104500
+Enter City: 
+Udupi
+Enter Gender: 
+m
+Updated ID 1002 successfully
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+2
+ID: 1001
+	 First Name: Thrishala
+	 Last Name: Natolana
+	 DOB: 14/3/2001
+	 City: Mangalore
+	 Salary: 36990.0
+	 Gender: Female
+ID: 1002
+	 First Name: Akshatha
+	 Last Name: Shetty
+	 DOB: 19/1/1995
+	 City: Udupi
+	 Salary: 104500.0
+	 Gender: Male
+ID: 1003
+	 First Name: Supriya
+	 Last Name: Shenoy
+	 DOB: 29/1/1999
+	 City: Bengaluru
+	 Salary: 30000.0
+	 Gender: Female
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+3
+Enter the ID to be deleted
+1003
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+2
+ID: 1001
+	 First Name: Thrishala
+	 Last Name: Natolana
+	 DOB: 14/3/2001
+	 City: Mangalore
+	 Salary: 36990.0
+	 Gender: Female
+ID: 1002
+	 First Name: Akshatha
+	 Last Name: Shetty
+	 DOB: 19/1/1995
+	 City: Udupi
+	 Salary: 104500.0
+	 Gender: Male
+----- MENU -----
+Enter 1: Insert record
+Enter 2: Display all records
+Enter 3: Delete single record
+Enter 4: Update record
+Enter 5: Display one record based on ID.
+7
