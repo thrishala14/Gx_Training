@@ -1,0 +1,1 @@
+export default Element = <h1>Thrishala</h1>

@@ -1,0 +1,20 @@
+h5{
+    text-align: center;
+    color:darkgreen;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    text-align: center;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    margin: .100rem .50rem .700rem .80rem;
+    font-size: 1rem;
+    border-radius: .50rem;
+    background-color: blue;
+    color: white;
+    -webkit-border-radius: .50rem;
+    -moz-border-radius: .50rem;
+    -ms-border-radius: .50rem;
+    -o-border-radius: .50rem;
+}
